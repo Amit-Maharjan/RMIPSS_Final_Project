@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMIPSS_Final_Project", "RMIPSS_Final_Project\RMIPSS_Final_Project.csproj", "{84A6C9FB-ECCA-4BEB-84AC-FD8B9C58CA6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84A6C9FB-ECCA-4BEB-84AC-FD8B9C58CA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A6C9FB-ECCA-4BEB-84AC-FD8B9C58CA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A6C9FB-ECCA-4BEB-84AC-FD8B9C58CA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A6C9FB-ECCA-4BEB-84AC-FD8B9C58CA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6D44E60-7C27-4605-BEE3-20C7EF46BF18}
+	EndGlobalSection
+EndGlobal
