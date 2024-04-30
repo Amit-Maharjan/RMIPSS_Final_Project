@@ -17,11 +17,16 @@ namespace RMIPSS_Final_Project.Controller
     internal class ReferralFormHandler
     {
         StudentMapper studentMapper = new StudentMapper();
+        ParentGuardianMapper parentGuardianMapper = new ParentGuardianMapper();
         public void saveReferralForm(String parameter)
         {
             Console.WriteLine("Parameter from saveReferralForm :::: " + parameter);
 
             studentMapper.saveStudentDetails(parameter);
+
+            Console.WriteLine("::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+
+            parentGuardianMapper.saveParentGuardianDetails(parameter);
         }
     }
 }
