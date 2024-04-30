@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using System;
 using RMIPSS_Final_Project.Model;
 using RMIPSS_Final_Project.Services;
+using RMIPSS_Final_Project.Forms;
 
 namespace RMIPSS_Final_Project.Controller
 {
@@ -18,6 +19,8 @@ namespace RMIPSS_Final_Project.Controller
     {
         StudentMapper studentMapper = new StudentMapper();
         ParentGuardianMapper parentGuardianMapper = new ParentGuardianMapper();
+        FormFactoryBean formFactory = new FormFactoryBean();
+
         public void saveReferralForm(String parameter)
         {
             Console.WriteLine("Parameter from saveReferralForm :::: " + parameter);
@@ -27,6 +30,11 @@ namespace RMIPSS_Final_Project.Controller
             Console.WriteLine("::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 
             parentGuardianMapper.saveParentGuardianDetails(parameter);
+        }
+
+        public void getReferralForm() 
+        {
+            Form form = formFactory.getForm("Referral");
         }
     }
 }
