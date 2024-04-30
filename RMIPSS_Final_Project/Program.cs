@@ -4,5 +4,6 @@ using RMIPSS_Final_Project.JSON;
 
 ReferralFormHandler referralFormHandler = new ReferralFormHandler();
 referralFormHandler.saveReferralForm(JSONModel.studentJson);
+//referralFormHandler.saveReferralForm(JSONModel.errorStudentJson);
 
-referralFormHandler.getReferralForm();
+//referralFormHandler.getReferralForm();

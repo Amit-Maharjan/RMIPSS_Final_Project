@@ -20,16 +20,27 @@ namespace RMIPSS_Final_Project.Controller
         StudentMapper studentMapper = new StudentMapper();
         ParentGuardianMapper parentGuardianMapper = new ParentGuardianMapper();
         FormFactoryBean formFactory = new FormFactoryBean();
+        ReferralFormMapper referralFormMapper = new ReferralFormMapper();
 
         public void saveReferralForm(String parameter)
         {
             Console.WriteLine("Parameter from saveReferralForm :::: " + parameter);
 
-            studentMapper.saveStudentDetails(parameter);
+            if (referralFormMapper.mapDetails(parameter))
+            {
+                Console.WriteLine("::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 
-            Console.WriteLine("::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+                studentMapper.saveStudentDetails(parameter);
 
-            parentGuardianMapper.saveParentGuardianDetails(parameter);
+                Console.WriteLine("::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+
+                parentGuardianMapper.saveParentGuardianDetails(parameter);
+            } else
+            {
+                Console.WriteLine(":::::::::::::::::::::::::::::::VALIDATION FAILED::::::::::");
+            }
+
+            
         }
 
         public void getReferralForm() 
